@@ -2,7 +2,7 @@
 Welcome to my GitHub repository where I showcase a collection of hands-on projects in the exciting realms of data science and machine learning! 🌐📊
 
 🛠️ Technologies Used:
-Python, Jupyter Notebooks, scikit-learn, TensorFlow, PyTorch, Pandas, NumPy, and more.
+Python, Jupyter Notebooks, scikit-learn, TensorFlow, Pandas, NumPy, and more.
 
 
 
