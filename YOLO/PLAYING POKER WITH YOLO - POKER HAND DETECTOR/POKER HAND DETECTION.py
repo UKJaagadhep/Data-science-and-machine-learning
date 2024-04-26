@@ -44,7 +44,7 @@ while True:
              
             cvzone.putTextRect(img, f'{current_class} {confidence_score}', (max(0, x1), max(35, y1)), scale=1, thickness=1)
              
-            if conf > 0.5:
+            if confidence_score > 0.5:
                 hand.append(current_class)
      
     hand = list(set(hand)) #SINCE EACH CARD HAS RANK IN 2 PLACES, WE WANT TO DETECT IT ONLY ONCE IF BOTH TOP AND BOTTOM ARE DETECTED        
