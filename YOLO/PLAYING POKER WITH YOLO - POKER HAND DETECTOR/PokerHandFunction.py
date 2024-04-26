@@ -51,7 +51,7 @@ def findPokerHand(hand):
             if sortedRanks.count(val) == 3:  # --- Full house
                 possibleRanks.append(7)
                 
-     # Three of a Kind and Pair
+     # Three of a Kind and TWO Pair
     # 5 5 5 6 7 -- set -- 5 6 7 --- unique values = 3   -- three of a kind
     # 8 8 7 7 2 -- set -- 8 7 2 --- unique values = 3   -- two pair
     if len(handUniqueVals) == 3:
