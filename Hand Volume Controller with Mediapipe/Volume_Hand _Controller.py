@@ -74,7 +74,7 @@ while True:
             
         #DISPLAYING VOLUME BAR
         cv2.rectangle(img, (50, 150), (85, 400), (255, 0, 0), 3)
-        volBar = np.interp(length, [30, 300], [400, 150]) #CONVERTING LENGTH RANGE TO RECTANGLE Y RANGE [150, 400]
+        volBar = np.interp(length, [30, 300], [400, 150]) #CONVERTING LENGTH RANGE TO RECTANGLE Y RANGE [400, 150]
         cv2.rectangle(img, (50, int(volBar)), (85, 400), (255, 0, 0), cv2.FILLED)
         
         #DISPLAYING VOLUME TEXT
