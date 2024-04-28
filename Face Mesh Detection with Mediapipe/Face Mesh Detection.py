@@ -19,7 +19,7 @@ while True:
         for each_face in results.multi_face_landmarks:
             mpDraw.draw_landmarks(img, each_face, mpFaceMesh.FACEMESH_TESSELATION, landmark_drawing_spec = drawSpec, connection_drawing_spec = drawSpec)
             for ID, landmark in enumerate(each_face.landmark):
-                print(ID, landmark)
+                #print(ID, landmark)
                 h, w, c = img.shape
                 cx, cy = int(landmark.x * w), int(landmark.y * h)
                 print(ID,  cx, cy)
