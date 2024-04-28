@@ -7,7 +7,7 @@ cap = cv2.VideoCapture("D:\\OneDrive\\Desktop\\FACE DETECTION WITH MEDIAPIPE\\Je
 mpDraw = mp.solutions.drawing_utils
 mpFaceMesh = mp.solutions.face_mesh
 faceMesh = mpFaceMesh.FaceMesh(max_num_faces = 2)
-drawSpec = mpDraw.DrawingSpec(thickness = 1, circle_radius = 2) #DRAWING SPECIFICATIONS FOR CONNECTIONS 
+drawSpec = mpDraw.DrawingSpec(thickness = 1, circle_radius = 2) #DRAWING SPECIFICATIONS FOR DISPLAYING LANDMARKS AND CONNECTIONS 
 
 previous_time = 0
 
