@@ -26,7 +26,6 @@ index_name = "medical-bot"
 #Loading the index
 docsearch = PineconeVectorStore.from_existing_index(index_name, embeddings)
 
-
 prompt = PromptTemplate(template = prompt_template, input_variables = ["context", "question"])
 
 chain_type_kwargs = {"prompt" : prompt}
@@ -48,8 +47,6 @@ qa = RetrievalQA.from_chain_type(
 def index():
     return render_template('chat.html')
 
-
-
 @app.route("/get", methods = ["GET", "POST"])
 def chat():
     msg = request.form["msg"]
@@ -58,8 +55,6 @@ def chat():
     result = qa({"query" : input})
     print("Response : ", result["result"])
     return str(result["result"])
-
-
 
 if __name__ == '__main__':
     app.run(host = "0.0.0.0", port = 8080, debug = True)
