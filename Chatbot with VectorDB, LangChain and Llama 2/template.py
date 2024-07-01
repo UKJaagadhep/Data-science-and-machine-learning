@@ -9,7 +9,7 @@ list_of_files = [
     "src/helper.py",
     "src/prompt.py",
     "setup.py",
-    "research/trials.ipynb",
+    "colab_notebooks/trials.ipynb",
     "app.py",
     "store_index.py",
     "templates/chat.html"
